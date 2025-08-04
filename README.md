@@ -20,24 +20,3 @@ React frontend: pages for Home, Courses, Course Details, Login, Dashboard.
 Protected routes and role checks for instructors.
 Containerize frontend and backend with Docker.
 
-File Structure: 
-/online-learning-platform
-  /client         # React frontend
-    /src
-      /components
-      /pages
-      /utils
-      App.js
-      index.js
-  /server         # Node.js/Express backend
-    /controllers
-    /models
-    /routes
-    /middleware
-    server.js
-    config.js
-  /docker
-    Dockerfile-client
-    Dockerfile-server
-    docker-compose.yml
-  README.md
