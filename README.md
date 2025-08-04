@@ -1,22 +1,31 @@
-1. Online Learning Platform
+Online Learning Platform
 
-Tech Stack: MongoDB, Express.js, React, Node.js, Docker
+Features
+Student/instructor registration
+Browse courses
+Enroll, view lessons, take quizzes
+Tech Stack
+MERN (MongoDB, Express, React, Node.js)
+Docker (for deployment)
+Setup
+Run npm install in both /client and /server.
+Start backend: node server.js
+Start frontend: npm start
+Usage
+Visit /courses to browse courses.
+Register/login as student or instructor.
 
-Core Features:
-User authentication (students & instructors, JWT-based)
-Course browsing (list, detail view)
-Video content embedding (YouTube or local)
-Quiz per course (multiple choice)
-Enroll in courses
-Instructors can add/edit courses and manage content
-Role-based access control
-RESTful APIs for courses, users, progress
+## Frontend
 
-Implementation Steps:
-Set up backend with Express, MongoDB, JWT authentication.
-Models: User, Course, Quiz, Enrollment.
-REST APIs: /courses, /users, /quizzes, etc.
-React frontend: pages for Home, Courses, Course Details, Login, Dashboard.
-Protected routes and role checks for instructors.
-Containerize frontend and backend with Docker.
+- Navigate to `/client`
+- Run `npm install` to install dependencies
+- Start the dev server with `npm start`
 
+## Docker
+
+- Ensure Docker is installed.
+- From root folder (where docker-compose.yml is), run:
+
+- Backend API available at http://localhost:5000
+- Frontend available at http://localhost:3000
+- MongoDB runs in its container, data persisted in volume.
